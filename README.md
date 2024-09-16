@@ -1,5 +1,9 @@
 # Super Mario 64
 
+Campo: This works in the Kali VM using the checked out code in the shared Windows folder.
+
+---
+
 - This repo contains a full decompilation of Super Mario 64 of the following releases: Japan (jp), North America (us), Europe (eu), Shindou (sh) and iQue Player (cn).
 - Naming and documentation of the source code and data structures are in progress.
 
@@ -18,8 +22,9 @@ A prior copy of the game is required to extract the assets.
 
 1. Install prerequisites: `sudo apt install -y binutils-mips-linux-gnu build-essential git pkgconf python3`
 2. Clone the repo from within Linux: `git clone https://github.com/n64decomp/sm64.git`
-3. Place a Super Mario 64 ROM called `baserom.<VERSION>.z64` into the project folder for asset extraction, where `VERSION` can be `jp`, `us`, `eu`, `sh`, or `cn`.
-4. Run `make` to build. Specify the version through `make VERSION=<VERSION>`. Add `-j4` to improve build speed (hardware dependent).
+3. Download ROM from https://vimm.net/vault/N64
+4. Place a Super Mario 64 ROM called `baserom.<VERSION>.z64` into the project folder for asset extraction, where `VERSION` can be `jp`, `us`, `eu`, `sh`, or `cn`.
+5. Run `make` to build. Specify the version through `make VERSION=<VERSION>`. Add `-j4` to improve build speed (hardware dependent).
 
 Ensure the repo path length does not exceed 255 characters. Long path names result in build errors.
 
